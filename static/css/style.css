@@ -9,7 +9,7 @@
 
 .header{
     height: 140px;
-    background: linear-gradient(179deg, rgba(0,0,0,1) 0%, rgba(30,211,212,1) 100%);
+    background: linear-gradient(90deg, rgba(127,183,194,1) 42%, rgba(49,218,214,1) 69%);
 }
 
 .main_menu{
@@ -21,7 +21,7 @@
 
 .main_menu a{
     text-decoration: none;
-    color: cornsilk;
+    color: black;
     font-weight: 400;
 }
 
@@ -29,7 +29,7 @@
     list-style: none;
     margin-right: 10px;
     width: 140px;
-    margin-top: 5%;
+    margin-top: 4%;
     box-shadow: 10px 10px 10px black;
     font-family: monospace;
     border-radius: 100px;
@@ -54,6 +54,10 @@
     height: 100%;
 }
 
+.empty_block{
+    height: 2px;
+}
+
 /* content */
 
 .content{
@@ -61,6 +65,78 @@
     margin: 100px auto 0;
     flex: 1 0 auto;
 }
+
+/* mane_page */
+
+.info{
+    display: flex;
+    margin: 80px auto 0;
+    width: 50%;
+    box-shadow: -5px 15px 10px skyblue;
+    align-items: center;
+    border-radius: 200px;
+    font-family: monospace;
+
+}
+
+.description{
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: right;
+
+}
+
+.names{
+    box-shadow: -5px 15px 10px skyblue;
+    border-radius: 200px;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+    border: 1px skyblue solid;
+    margin-bottom: 15px;
+
+}
+
+.desc{
+    width: 100%;
+    font-weight: 600;
+    color: dodgerblue;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 0px 0px skyblue ;
+    border-radius: 200px;
+}
+
+
+.desc li{
+    margin-bottom: 10px;
+    font-style: normal;
+    box-shadow: 5px 3px 10px #3bbba3;
+    font-size: 20px;
+    padding: 5px;
+    font-family: monospace;
+    border-radius: 200px;
+    letter-spacing: 2px;
+}
+
+ul.checkmark li:before {
+    content: "\2713\0020";
+    color: #00fff7;
+}
+
+ul a {
+    text-decoration: none;
+    color: #40a19e;
+}
+
+.checkmark li:hover {
+    transition-duration: 0.1s;
+    box-shadow: 0px 12px 10px #00e7e0;
+}
+
+.checkmark li{
+    list-style: none;
+}
+
 
 /* footer */
 
@@ -72,7 +148,7 @@
     height: 100px;
     font-size: 15px;
     font-family: monospace;
-    background-color: darkcyan;
+    background-color: #048585;
     flex: 0 0 auto;
 
 

@@ -1,6 +1,34 @@
 {% extends 'base.html'%}
 
-{% block content %}
+{% block main_page %}
+
+<div class="wrapper">
+    <div class="empty_block"></div>
+
+    <div class="info">
+
+        <div class="description">
+            <p class="names">Твій знак зодіака </p>
+
+        <div class="desc">
+            <ul class="checkmark">
+                <li><a href="{{ url_for('cancer_page')}}">Рак</a></li>
+                <li><a href="{{ url_for('capricorn_page')}}">Козоріг</a></li>
+                <li><a href="{{ url_for('aries_page')}}">Овен</a></li>
+                <li><a href="{{ url_for('taurus_page')}}">Телець</a></li>
+                <li><a href="{{ url_for('twin_page')}}">Близнята</a></li>
+                <li><a href="{{ url_for('diva_page')}}">Діва</a></li>
+                <li><a href="{{ url_for('teresa_page')}}">Терези</a></li>
+                <li><a href="{{ url_for('scorpio_page')}}">Скорпіон</a></li>
+                <li><a href="{{ url_for('sagittarius_page')}}">Стрілець</a></li>
+                <li><a href="{{ url_for('aquarius_page')}}">Водолій</a></li>
+                <li><a href="{{ url_for('fish_page')}}">Риби</a></li>
+            </ul>
+        </div>
+           </div>
+    </div>
 
 
-{% endblock content %}
+</div>
+
+{% endblock main_page %}
