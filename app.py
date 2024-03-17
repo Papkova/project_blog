@@ -1,5 +1,4 @@
-from flask import Flask, render_template
-
+from flask import Flask, render_template, User
 
 app = Flask(__name__) # корінь проекту
 
@@ -25,9 +24,9 @@ sign_routes = {
 
 
 
-@app.route("/page/<int:id>")
-def page(id):
-    name = Sign.query.get(id)
+@app.route("/users/<int:id>")
+def users(id):
+    name = User.query.get(id)
     sign_name = name.name.lower()
     page_function = sign_routes.get(sign_name)
     if page_function is not None:
