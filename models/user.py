@@ -1,13 +1,7 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Text, DateTime
+from sqlalchemy import Column, Integer, String
 from .database import Base
 from sqlalchemy.orm import relationship
-from flask_login import UserMixin, login_manager
-
-
-
-# @login_manager.user_loader
-# def load_user(user_id):
-#     return User.query.get(int(user_id))
+from flask_login import UserMixin
 
 
 class User(UserMixin, Base):
